@@ -1,0 +1,32 @@
+$gtk.reset seed: 1626030399
+$gtk.reset seed: 1626018654
+$gtk.reset seed: 1625870478
+$gtk.reset seed: 1625857971
+$gtk.reset seed: 1625831672
+$gtk.reset seed: 1625797696
+$gtk.reset seed: 1625797677
+$gtk.reset seed: 1625795685
+puts "Hello DragonRuby"
+puts "Hello DragonRuby!"
+outputs.solids << [910, 200, 100, 100, 255, 0, 0]
+outputs.solids << [1010, 200, 100, 100, 0, 0, 255]
+outputs.sprites << [1110, 200, 100, 100, 'sprites/dragon_fly_0.png']
+outputs.labels << [1210, 200, state.tick_count, 0, 255, 0]
+state.sprite_frame = state.tick_count.idiv(4).mod(6)
+outputs.labels << [1210, 170, state.sprite_frame, 0, 255, 0]
+state.sprite_path = "sprites/dragon_fly_#{state.sprtie_frame}.png"
+state.sprite_path = "sprites/dragon_fly_#{state.sprite_frame}.png"
+outputs.labels << [910, 330, "path: #{state.sprite_path}", 0, 255, 0]
+outputs.sprites << [910, 330, 370, 370, state.sprite_path]
+puts x
+puts @args
+puts @curr_piece
+puts *
+$gtk.reset seed: 1625837784
+puts @grid
+words = ["would","you","like"]
+words.map &:length
+args.state.words = ["would","you","like"]
+["would","you","like"].map &:length
+["would","you","like"].map &:reverse
+$gtk.reset seed: 1625870478s
